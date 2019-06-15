@@ -6,7 +6,7 @@ import java.util.List;
 public class ReverseOrderIteratorImpl<E> implements ReverseOrderIterator<E> {
 
     private int cursor;
-    private List<E> list;
+    private final List<E> list;
 
     public ReverseOrderIteratorImpl(List<E> list) {
         this.cursor = list.size() - 1;
