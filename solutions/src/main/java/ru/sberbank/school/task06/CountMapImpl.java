@@ -20,7 +20,7 @@ public class CountMapImpl<T> implements CountMap<T> {
     public int getCount(T o) {
         try {
             return map.get(o);
-        } catch (NullPointerException ex){
+        } catch (NullPointerException ex) {
             return 0;
         }
 
@@ -29,8 +29,8 @@ public class CountMapImpl<T> implements CountMap<T> {
     @Override
     public int remove(T o) {
         try {
-            return  map.remove(o);
-        } catch (NullPointerException ex){
+            return map.remove(o);
+        } catch (NullPointerException ex) {
             return 0;
         }
     }

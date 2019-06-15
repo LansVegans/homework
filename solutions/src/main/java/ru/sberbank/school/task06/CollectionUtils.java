@@ -145,7 +145,7 @@ public class CollectionUtils {
 //            }};
 
         return list.stream()
-                .filter((T t) ->comparator.compare(t, min) >= 0 && comparator.compare(t, max) <= 0)
+                .filter((T t) -> comparator.compare(t, min) >= 0 && comparator.compare(t, max) <= 0)
                 .sorted()
                 .collect(Collectors.toList());
     }
