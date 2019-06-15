@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  */
 public class Streams<T> {
 
-    private List<T> list;
+    private final List<T> list;
 
     @SafeVarargs
     public Streams(T... list) {
